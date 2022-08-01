@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,31 @@
   <link rel="stylesheet" href="index.css">
   <script src="scripts/index.js" defer></script>
 </head>
+
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <h1>Awesome Books</h1>
+
+    <div id="bookList" class="">
+      <div class="book">
+        <p class="bookInfo">For Whom the Bell Tolls</p>
+        <p class="bookInfo">Ernest Hemingway</p>
+        <button class="remove" type="button" name="button">Remove</button>
+        <hr>
+      </div>
+    </div>
+
+    <form class="bookForm" action="index.html" method="post">
+      <label for="bookTitle"></label>
+      <input id="bookTitle" type="text" name="" value="" placeholder="Title">
+      <label for="author"></label>
+      <input id="author" type="text" name="" value="" placeholder="Author">
+      <button type="button" name="addBook">Add</button>
+    </form>
+
+  </main>
   <footer></footer>
 </body>
+
 </html>
