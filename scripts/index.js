@@ -67,9 +67,8 @@ function addBookFromStorage(titleP, authorP) {
 }
 
 function removeBook(e) {
-  const rmvBtns = document.getElementsByClassName('remove');
+  // const rmvBtns = document.getElementsByClassName('remove');
   e.target.parentElement.remove();
-
 }
 
 addBtn.addEventListener('click', addBook);
