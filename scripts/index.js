@@ -66,18 +66,19 @@ function addBookFromStorage(titleP, authorP) {
   bookList.appendChild(tree);
 }
 
-// function removeBook() {
-//   const rmvBtns = document.getElementsByClassName('remove');
-//
-// }
+function removeBook(e) {
+  const rmvBtns = document.getElementsByClassName('remove');
+  e.target.parentElement.remove();
+
+}
 
 addBtn.addEventListener('click', addBook);
 
-// document.addEventListener('click', (e) => {
-//   if (e.target && e.target.classList.contains('remove')) {
-//
-//   }
-// });
+document.addEventListener('click', (e) => {
+  if (e.target && e.target.classList.contains('remove')) {
+    removeBook(e);
+  }
+});
 
 window.addEventListener('load', () => {
   if (localStorage.getItem('data')) {
