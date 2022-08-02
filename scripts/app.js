@@ -9,7 +9,7 @@ class Book {
 // UI Class
 class UI {
   static displayBooks() {
-    const books = [];
+    const books = Storage.getBooks();
     books.forEach((book) => UI.addBookToList(book));
   }
 
@@ -27,6 +27,11 @@ class UI {
     if (e.classList.contains('remove')) {
       e.parentElement.parentElement.remove();
     }
+  }
+
+  static clearFields(e) {
+    document.getElementById('bookTitle').value = '';
+    document.getElementById('author').value = '';
   }
 }
 
@@ -73,7 +78,7 @@ document.getElementById('addBtn').addEventListener('click', (e) => {
     const book = new Book(title, author);
     UI.addBookToList(book);
 
-    // TODO: Add book to storage
+    UI.clearFields();
     Storage.addBook(book);
   }
 });
@@ -82,7 +87,6 @@ document.getElementById('addBtn').addEventListener('click', (e) => {
 document.getElementById('bookList').addEventListener('click', (e) => {
   UI.removeBook(e.target);
 
-  // TODO: Remove book from storage
   Storage.deleteBook(e.target.parentElement.previousElementSibling.textContent);
 
 });
