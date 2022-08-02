@@ -1,3 +1,6 @@
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-alert */
+
 // Book Class
 class Book {
   constructor(title, author) {
