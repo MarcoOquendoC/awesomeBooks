@@ -50,7 +50,7 @@ class UI {
     const row = document.createElement('tr');
     row.innerHTML = `
       <td>"${b.title}" by ${b.author}</td>
-      <td><a href="#" class="remove">Remove</a></td>`;
+      <td><button type='button' class="remove">Remove</button></td>`;
 
     bookList.appendChild(row);
   }
