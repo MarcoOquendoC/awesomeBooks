@@ -6,4 +6,4 @@ class Book {
   }
 }
 
-export {Book};
+export { Book };

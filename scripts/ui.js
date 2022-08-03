@@ -1,5 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 // UI Class
-import {Storage} from './storage.js'
+import { Storage } from './storage.js';
 
 class UI {
   static displayBooks() {
@@ -29,4 +30,4 @@ class UI {
   }
 }
 
-export {UI};
+export { UI };

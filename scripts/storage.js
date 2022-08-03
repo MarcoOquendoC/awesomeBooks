@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 // Storage Class
 class Storage {
   static getBooks() {
@@ -27,4 +28,4 @@ class Storage {
   }
 }
 
-export {Storage};
+export { Storage };
