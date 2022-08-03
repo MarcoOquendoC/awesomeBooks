@@ -64,3 +64,10 @@ document.getElementById('bookList').addEventListener('click', (e) => {
 
   Storage.deleteBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+const fecha = document.getElementById('fecha')
+setInterval(setDate,  1000)
+function setDate() {
+  const date = new Date();
+  fecha.innerHTML = date.toLocaleString('en-US');
+}
