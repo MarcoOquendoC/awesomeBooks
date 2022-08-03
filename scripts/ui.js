@@ -1,8 +1,7 @@
-/* eslint-disable import/prefer-default-export */
 // UI Class
 import { Storage } from './storage.js';
 
-class UI {
+export class UI {
   static displayBooks() {
     const books = Storage.getBooks();
     books.forEach((book) => UI.addBookToList(book));
@@ -30,4 +29,4 @@ class UI {
   }
 }
 
-export { UI };
+export default UI;

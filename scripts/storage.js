@@ -1,6 +1,5 @@
-/* eslint-disable import/prefer-default-export */
 // Storage Class
-class Storage {
+export class Storage {
   static getBooks() {
     let books = [];
     if (localStorage.getItem('data')) {
@@ -28,4 +27,4 @@ class Storage {
   }
 }
 
-export { Storage };
+export default Storage;

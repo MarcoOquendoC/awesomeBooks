@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 import {
   UI,
 } from './ui.js';
