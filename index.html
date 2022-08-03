@@ -15,23 +15,24 @@
     <nav>
       <span>Awesome Books</span>
       <ul>
-        <li><a id="list" href="#">List</a></li>
+        <li><a id="navList" href="#">List</a></li>
         <li>|</li>
-        <li><a id="new" href="#">Add New</a></li>
+        <li><a id="navNew" href="#">Add New</a></li>
         <li>|</li>
-        <li><a id="contact" href="#">Concact</a></li>
+        <li><a id="navContact" href="#">Contact</a></li>
       </ul>
     </nav>
-    <div id="fecha">Fecha</div>
+    <div id="fecha">Date</div>
   </header>
   <main>
-    <h1>Awesome Books</h1>
-    <div class="container">
+    <section id="list">
+      <h1>All awesome books</h1>
       <table id="bookList">
+        <!-- Book List from javaScript -->
       </table>
-      <br>
-      <hr>
-      <h2>Add New Books</h2>
+    </section>
+    <section id="new">
+      <h2>Add a new book</h2>
       <form class="bookForm" action="index.html" method="post">
         <label for="bookTitle"></label>
         <input id="bookTitle" type="text" placeholder="Title">
@@ -39,9 +40,22 @@
         <input id="author" type="text" placeholder="Author">
         <button id="addBtn" type="button" name="addBook">Add</button>
       </form>
-    </div>
+    </section>
+    <section id="contact">
+      <h2>Contact information</h2>
+      <p>Do you have any questions or you just want to say "Hello"? <br>You can reach out to us!</p>
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 555-555-5555</li>
+        <li>Our address: 42 Wallaby Way, Sydney</li>
+      </ul>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p>
+      Copyright ...
+    </p>
+  </footer>
 </body>
 
 </html>
