@@ -13,7 +13,7 @@ main {
 }
 
 h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ button {
 }
 
 #list {
-  width: 25rem;
+  width: 30rem;
   max-width: 95%;
 }
 
@@ -76,16 +76,16 @@ td {
 
 header {
   margin: auto;
-  width: 25rem;
+  width: 30rem;
   max-width: 100%;
 }
 
 nav {
-  padding: 0.2rem 0;
+  padding: 0.3rem 1rem;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  width: 25rem;
+  width: 30rem;
   max-width: 100%;
   border: 1px solid #000;
 }
@@ -104,8 +104,7 @@ nav li {
 }
 
 li a {
-  text-decoration: none;
-  color: #000;
+  color: rgb(16, 83, 182);
 }
 
 #fecha {
@@ -116,8 +115,8 @@ li a {
 footer {
   border: 1px solid #000;
   margin: 1rem auto 0 auto;
-  padding: 0.3rem;
-  width: 25rem;
+  padding: 0.4rem 1rem;
+  width: 30rem;
   max-width: 100%;
 }
 
@@ -127,10 +126,21 @@ footer {
   align-items: center;
 }
 
-#contact h2 {
+#contact p {
   margin: 1rem;
 }
 
-#contact p {
-  margin: 1rem;
+.hide {
+  display: none !important;
+}
+
+section {
+  min-height: 15rem;
+}
+
+.active {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
 }

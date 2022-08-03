@@ -15,7 +15,7 @@
     <nav>
       <span>Awesome Books</span>
       <ul>
-        <li><a id="navList" href="#">List</a></li>
+        <li><a id="navList" class="active" href="#">List</a></li>
         <li>|</li>
         <li><a id="navNew" href="#">Add New</a></li>
         <li>|</li>
@@ -25,13 +25,13 @@
     <div id="fecha">Date</div>
   </header>
   <main>
-    <section id="list">
+    <section id="list" >
       <h1>All awesome books</h1>
       <table id="bookList">
         <!-- Book List from javaScript -->
       </table>
     </section>
-    <section id="new">
+    <section id="new" class="hide">
       <h2>Add a new book</h2>
       <form class="bookForm" action="index.html" method="post">
         <label for="bookTitle"></label>
@@ -41,7 +41,7 @@
         <button id="addBtn" type="button" name="addBook">Add</button>
       </form>
     </section>
-    <section id="contact">
+    <section id="contact" class="hide">
       <h2>Contact information</h2>
       <p>Do you have any questions or you just want to say "Hello"? <br>You can reach out to us!</p>
       <ul>
