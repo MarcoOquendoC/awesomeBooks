@@ -7,27 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="index.css">
-  <script src="scripts/index.js" defer></script>
+  <script type="module" src="./scripts/app.js"></script>
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <nav>
+      <span>Awesome Books</span>
+      <ul>
+        <li><a id="navList" class="active" href="#">List</a></li>
+        <li>|</li>
+        <li><a id="navNew" href="#">Add New</a></li>
+        <li>|</li>
+        <li><a id="navContact" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="fecha"><br></div>
+  </header>
   <main>
-    <h1>Awesome Books</h1>
-
-    <div id="bookList">
-    </div>
-
-    <form class="bookForm" action="index.html" method="post">
-      <label for="bookTitle"></label>
-      <input id="bookTitle" type="text" placeholder="Title">
-      <label for="author"></label>
-      <input id="author" type="text" placeholder="Author">
-      <button id="addBtn" type="button" name="addBook">Add</button>
-    </form>
-
+    <section id="list" >
+      <h1>All awesome books</h1>
+      <table id="bookList">
+        <!-- Book List from javaScript -->
+      </table>
+    </section>
+    <section id="new" class="hide">
+      <h2>Add a new book</h2>
+      <form class="bookForm" action="index.html" method="post">
+        <label for="bookTitle"></label>
+        <input id="bookTitle" type="text" placeholder="Title">
+        <label for="author"></label>
+        <input id="author" type="text" placeholder="Author">
+        <button id="addBtn" type="button" name="addBook">Add</button>
+      </form>
+    </section>
+    <section id="contact" class="hide">
+      <h2>Contact information</h2>
+      <p>Do you have any questions or you just want to say "Hello"? <br>You can reach out to us!</p>
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 555-555-5555</li>
+        <li>Our address: 42 Wallaby Way, Sydney</li>
+      </ul>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p>
+      Copyright ...
+    </p>
+  </footer>
 </body>
 
 </html>

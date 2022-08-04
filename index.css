@@ -1,40 +1,147 @@
 /* Styles */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.bookForm {
+  gap: 0.5rem;
+  margin: auto;
+  width: 20rem;
+  display: flex;
+  padding: 1rem;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+button {
+  padding: 0 0.5rem;
+  width: fit-content;
+  align-self: flex-end;
+  box-shadow: 1px 1px 1px #000;
+}
+
+#list {
+  width: 30rem;
+  max-width: 95%;
+}
+
+#list h1 {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+#bookList {
+  width: 100%;
+  border: 1px solid #000;
+  border-spacing: 0;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  padding: 0.2rem 0;
+  justify-content: space-between;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tr:nth-child(odd) {
+  background: #ccc;
+}
+
+td {
+  padding-left: 0.3rem;
+}
+
+.remove {
+  margin-right: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+header {
+  margin: auto;
+  width: 30rem;
+  max-width: 100%;
+}
+
+nav {
+  padding: 0.3rem 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  max-width: 100%;
+  border: 1px solid #000;
+}
+
+nav span {
+  padding-left: 0.2rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+li a {
+  color: rgb(16, 83, 182);
+}
+
+#fecha {
+  margin-top: 0.3rem;
+  text-align: right;
+  font-size: 0.7rem;
+}
+
+footer {
+  border: 1px solid #000;
+  margin: 1rem auto 0 auto;
+  padding: 0.4rem 1rem;
+  width: 30rem;
+  max-width: 100%;
+}
+
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  margin-bottom: 2rem;
+#contact p {
+  margin: 1rem;
 }
 
-.bookInfo,
-.remove,
-hr {
-  margin: 0.3rem 0;
+.hide {
+  display: none !important;
 }
 
-#bookList {
-  display: flex;
-  flex-direction: column;
+section {
+  min-height: 15rem;
 }
 
-.bookForm {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  max-width: 20rem;
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-button {
-  width: fit-content;
+.active {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
 }
